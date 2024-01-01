@@ -1,0 +1,47 @@
+@use "./variables/variables";
+
+.about {
+  padding: 5em 0em;
+
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 3.5rem;
+    color: $color-black;
+    font-weight: 800;
+    font-family: $font-primary;
+    margin-bottom: 1rem !important;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    color: $color-best;
+    margin-bottom: 1rem !important;
+  }
+
+  &__desc {
+    color: gray;
+    font-weight: 500;
+
+    p {
+      font-family: $font-secondary !important;
+      margin-bottom: 1.5rem !important;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .about {
+    &__title {
+      font-size: 2rem !important;
+    }
+
+    &__subtitle {
+      font-size: 1rem;
+    }
+  }
+}

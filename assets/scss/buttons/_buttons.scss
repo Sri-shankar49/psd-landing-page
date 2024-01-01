@@ -1,0 +1,41 @@
+@use "../variables/variables";
+
+.btns {
+  border: none;
+  border-radius: 25px;
+  font-size: 16px !important;
+
+  &__readmore {
+    padding: 15px 40px !important;
+    background-color: $color-primary;
+    margin-right: 20px;
+  }
+
+  &__services {
+    padding: 15px 40px !important;
+    background-color: $color-white;
+  }
+}
+
+.car-btn {
+  padding: 5px 25px;
+  background-color: $color-primary;
+  color: $color-white;
+  border: none;
+  border-radius: 25px;
+  font-family: $font-secondary;
+  font-weight: 600;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .btns {
+    &__readmore {
+      padding: 10px 10px !important;
+      margin-right: 0px;
+    }
+
+    &__services {
+      padding: 10px 10px !important;
+    }
+  }
+}

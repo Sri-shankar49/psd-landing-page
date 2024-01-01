@@ -1,0 +1,100 @@
+@use "./variables/variables";
+
+.footer {
+  padding: 5em 0em 1em;
+  background-color: $color-secondary;
+  color: $color-white;
+
+  &__content {
+    h4 {
+      margin-bottom: 1.5rem !important;
+    }
+
+    p {
+      margin-bottom: 1.5rem !important;
+    }
+
+    h5 {
+      margin-bottom: 1rem !important;
+    }
+
+    input {
+      padding: 10px 5px;
+      color: $color-white;
+      background-color: #0000003d;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      margin-bottom: 1.5rem !important;
+    }
+
+    input:focus-visible {
+      outline: none;
+    }
+
+    i {
+      padding: 10px 10px;
+      margin-right: 5px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:hover {
+        // background-color: rgba(255, 255, 255, .1);
+        background-color: whitesmoke;
+        color: $color-primary;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0px;
+
+      li {
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__form {
+    h4 {
+      margin-bottom: 1.5rem !important;
+    }
+  }
+
+  form {
+    input {
+      width: 100%;
+      border: none;
+      padding: 10px 5px;
+      margin-bottom: 5px;
+      background-color: rgba(0, 0, 0, 0.2392156863);
+      color: $color-white;
+    }
+
+    input:focus-visible {
+      outline: none;
+    }
+
+    textarea {
+      width: 100%;
+      border: none;
+      padding: 10px 5px;
+      margin-bottom: 5px;
+      background-color: rgba(0, 0, 0, 0.2392156863);
+      color: $color-white;
+    }
+
+    textarea:focus-visible {
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      color: #134f83;
+      padding: 5px 25px;
+      border: none;
+    }
+  }
+}

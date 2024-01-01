@@ -1,0 +1,126 @@
+@use "./variables/variables";
+
+.industries {
+  padding: 5em 0em;
+
+  &__title {
+    font-size: 3.5rem;
+    color: #000;
+    font-weight: 800;
+    font-family: "Viga", sans-serif;
+    margin-bottom: 1rem !important;
+  }
+
+  &__slider {
+    // border: 1px solid;
+    border-radius: 50px;
+    // margin: 0px 50px;
+    width: 75%;
+    margin: auto !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    h2 {
+      color: $color-primary;
+      font-family: $font-secondary;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem !important;
+    }
+
+    p {
+      margin-bottom: 1.5rem !important;
+      font-family: $font-secondary;
+      color: $color-black;
+    }
+  }
+
+  .carousel-item {
+    // width: 80% !important;
+    // margin: 0px auto;
+    // float: none !important;
+
+    img {
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      height: 600px;
+    }
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url(../icons/Left-white.svg) !important;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+    background-color: $color-primary;
+    transition: 200ms;
+
+    &:hover {
+      background-color: gray;
+    }
+  }
+
+  .carousel-control-next-icon {
+    background-image: url(../icons/right-white.svg) !important;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+    background-color: $color-primary;
+    transition: 200ms;
+
+    &:hover {
+      background-color: gray;
+    }
+  }
+}
+
+/* Media Query */
+@media (min-width: 768px) and (max-width: 991px) {
+  .industries {
+    .carousel-item {
+      img {
+        height: 750px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .industries {
+    &__slider {
+      width: 100%;
+    }
+    .carousel-item {
+      img {
+        height: 1100px;
+        border-radius: unset;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .industries {
+    &__slider {
+      flex-direction: column-reverse;
+      border-radius: unset;
+      box-shadow: none;
+    }
+
+    .carousel-item {
+      img {
+        height: auto;
+        border-radius: unset !important;
+      }
+    }
+  }
+
+  .car-content {
+    padding: 1em 0em;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .industries {
+    &__title {
+      font-size: 2rem !important;
+    }
+  }
+}
